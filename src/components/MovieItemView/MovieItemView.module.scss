@@ -1,0 +1,29 @@
+.item {
+  height: 650px;
+  position: relative;
+  border: 2px solid var(--color-secondary);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__img {
+    height: 433px;
+  }
+
+  &__btnGroupe {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-black);
+  }
+
+  &__desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+

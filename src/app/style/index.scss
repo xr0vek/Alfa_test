@@ -1,0 +1,106 @@
+#root {
+  --font-size: 24px;
+  --font-size-title: 48px;
+  --font-color-secondary: rgba(255, 255, 255, 0.7);
+
+  --color-bg: #0a182c;
+  --color-light: #ffffff;
+  --color-black: #000000;
+  --color-secondary: #393B3C;
+  --color-secondary-disabled: #747474;
+  --color-content-placeholder: rgba(0, 0, 0, 0.4);
+  --color-primary-btn: #67A5EB;
+  --color-primary-disabled: #45526E;
+  --color-font-disabled: rgba(255, 255, 255, 0.5);
+  --color-font-secondary: rgba(255, 255, 255, 0.7);
+  --color-green: #308E21;
+  --color-brand-active: #6A5DC2;
+  --color-bottom-side: #DC5DFC;
+  --color-content-error: #FF7575;
+  --color-raiting-good: #308E21;
+  --color-raiting-excellent: #A59400;
+  --color-raiting-bad: #777777;
+  --color-raiting-very-bad: #e85454;
+}
+
+@font-face {
+  font-family: "Play";
+  src: 
+  local('Play')
+  url('../fonts/Play-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Play";
+  src: 
+  local('Play'),
+  url('../fonts/Play-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  scrollbar-gutter: stable;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#root {
+  margin: 0;
+  min-width: 375px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size);
+  font-synthesis: none;
+  color: var(--color-light);
+  background-color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
+
+.title {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px; 
+}
+
+.underline {
+  border-bottom: 1px solid var(--color-bottom-side);
+}

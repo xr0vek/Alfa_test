@@ -1,0 +1,18 @@
+.heartIcon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: border .3s ease-in-out;
+}
+
+.fill svg path {
+  fill: var(--color-light);
+}
+
+.heartIcon:hover {
+  border: 1px solid white
+}
